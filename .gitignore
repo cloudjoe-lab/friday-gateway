@@ -37,8 +37,8 @@ surrealdb/surreal-2.0.1/
 surrealdb/surreal
 surrealdb/bronze/       # Local RocksDB data directory
 
-# --- Paperclip.ai project (separate upstream repo) ---
-paperclip/
+# --- Paperclip.ai project (separate upstream repo at ~/paperclip/) ---
+# (note: ~/friday-gateway/paperclip/ IS this repo — do NOT ignore)
 
 # --- Large media / binary assets ---
 vault/3_Resources/friday_avatar_medallion.png

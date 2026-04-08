@@ -1,0 +1,26 @@
+{
+  "name": "vanguard-paperclip",
+  "version": "0.1.0",
+  "description": "Vanguard's throne — task orchestration engine for the Friday Matrix",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test tests/"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "node-cron": "^3.0.3",
+    "uuid": "^9.0.0",
+    "axios": "^1.6.7"
+  },
+  "devDependencies": {
+    "express-async-errors": "^3.1.1"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
