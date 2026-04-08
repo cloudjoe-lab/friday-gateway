@@ -1,0 +1,20 @@
+# mosquitto.service — systemd user service
+# Friday Central Data Hub
+# Run: systemctl --user daemon-reload && systemctl --user enable --now mosquitto
+
+[Unit]
+Description=Mosquitto MQTT Broker (Friday Central Data Hub)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/home/krsna/.local/bin/mosquitto -c /home/krsna/friday-gateway/mqtt/config/mosquitto.conf
+Restart=on-failure
+RestartSec=5s
+StandardOutput=journal
+StandardError=journal
+Environment=LD_LIBRARY_PATH=/home/krsna/.local/lib
+LimitNOFILE=65536
+
+[Install]
+WantedBy=default.target

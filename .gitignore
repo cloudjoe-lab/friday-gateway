@@ -1,0 +1,55 @@
+# ============================================================
+# Friday Gateway — .gitignore
+# ============================================================
+
+# --- System ---
+.DS_Store
+Thumbs.db
+*~
+
+# --- Logs (keep dir, nuke files) ---
+logs/
+paperclip-logs/
+mqtt/logs/
+
+# --- Environment & Secrets ---
+.env
+.env.local
+.env.*.local
+
+# --- Dependencies ---
+node_modules/
+.pnpm-store/
+.pnpm/
+.npm/
+.yarn/
+__pycache__/
+*.pyc
+
+# --- Mosquitto build artifacts (system binary used) ---
+mqtt/mosquitto-2.1.2/
+mqtt/mosquitto-0.5.3-bin-lin-x86-static/
+mqtt/mosquitto-static.tar.gz
+mqtt/mosquitto.tar.gz
+
+# --- SurrealDB binary & data (rebuilt from start script) ---
+surrealdb/surreal-2.0.1/
+surrealdb/surreal
+surrealdb/bronze/       # Local RocksDB data directory
+
+# --- Paperclip.ai project (separate upstream repo) ---
+paperclip/
+
+# --- Large media / binary assets ---
+vault/3_Resources/friday_avatar_medallion.png
+
+# --- Temp files ---
+*.tmp
+*.swp
+*.swo
+*.out
+
+# --- Build artifacts ---
+dist/
+build/
+*.egg-info/

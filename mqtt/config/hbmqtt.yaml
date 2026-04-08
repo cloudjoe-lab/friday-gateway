@@ -1,0 +1,24 @@
+# HBMQTT Broker Config — Friday Central Data Hub
+listeners:
+  default:
+    type: tcp
+    bind: 127.0.0.1:1883
+    max_connections: -1
+  websocket:
+    type: ws
+    bind: 127.0.0.1:9001
+    max_connections: -1
+
+allow_anonymous: true
+keepalive: 60
+
+sys_interval: 10
+
+auth:
+  allow_anonymous: true
+
+persistence:
+  retmq: true
+  storage: memory
+
+topic_check: false
