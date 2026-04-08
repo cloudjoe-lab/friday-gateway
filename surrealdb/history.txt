@@ -1,0 +1,6 @@
+#V2
+SELECT * FROM events LIMIT 5;
+USE NS main;
+SELECT * FROM events LIMIT 5;
+INSERT INTO events (topic, origin) VALUES ('test/now', 'cli-test');
+SELECT * FROM events;
