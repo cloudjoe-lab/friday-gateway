@@ -53,3 +53,6 @@ vault/3_Resources/friday_avatar_medallion.png
 dist/
 build/
 *.egg-info/
+
+# --- Runtime logs and data ---
+scripts/history.txt
